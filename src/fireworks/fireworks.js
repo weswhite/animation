@@ -8,7 +8,7 @@ class Fireworks extends Component {
 
     var canvasEl = document.querySelector('.fireworks');
     var ctx = canvasEl.getContext('2d');
-    var numberOfParticules = 40;
+    var numberOfParticules = 1000;
     var pointerX = 0;
     var pointerY = 0;
     var tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown';
