@@ -1,9 +1,9 @@
 if (module.hot) module.hot.accept(() => window.location.reload())
 
-let x = 320;
-let y = 180;
-let xspeed = 5;
-let yspeed = 2;
+import * as p5 from 'p5'
+
+const location = new p5.Vector(320, 180);
+const velociy = new p5.Vector(5,2);
 
 let r = 25;
 
@@ -13,14 +13,13 @@ export function setup () {
 }
 
 export function draw () {
-    background(0);
-    ellipse(x, y, r*2, r*2);
-    x += xspeed;
-    y += yspeed;
-    if (x > width - r || x < r) {
-      xspeed = -xspeed;
+    background(52)
+    ellipse(location.x, location.y, r*2, r*2);
+    location.add(velociy)
+    if ((location.x > width) || (location.x < 0)) {
+      velocity.x = velocity.x * -1;
     }
-    if (y > height - r || y < r) {
-      yspeed = -yspeed;
+    if ((location.y > height) || (location.y < 0)) {
+      velocity.y = velocity.y * -1;
     }
 }
