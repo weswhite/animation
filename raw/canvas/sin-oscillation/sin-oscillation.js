@@ -23,8 +23,8 @@ function draw() {
   ctx.fillStyle = ball.color;
   ctx.fill();
   ctx.closePath();
-  //all.y = canvas.height / 2 + Math.sin(radians(ball.angle)) * canvas.height / 2 ;
-  ball.x = canvas.width / 2 + Math.sin(radians(ball.angle)) * canvas.width / 2 ;
+  ball.y = canvas.height / 2 + Math.sin(radians(ball.angle)) * canvas.height / 2 ;
+  ball.x = canvas.width / 2 + Math.cos(radians(ball.angle)) * canvas.width / 2 ;
   ball.angle += ball.speed_x
 }
 
