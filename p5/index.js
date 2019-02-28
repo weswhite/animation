@@ -1,6 +1,6 @@
 import p5 from 'p5'
 
-import * as sketch from './static-circle/static-circle'
+import * as sketch from './perlin-noise/perlin'
 for(let opt in sketch) {
   window[opt] = sketch[opt]
 }
