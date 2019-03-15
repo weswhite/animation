@@ -2,17 +2,78 @@
 # yarn lockfile v1
 
 
+"Reasongl@github:bsansouci/reasongl":
+  version "0.2.0"
+  resolved "https://codeload.github.com/bsansouci/reasongl/tar.gz/4409c327bbbf34690672274b89bfc5aefe83ca46"
+  dependencies:
+    Tgls bsansouci/tgls
+    Tsdl bsansouci/tsdl
+    gl-matrix "*"
+
+Tgls@bsansouci/tgls:
+  version "0.8.4"
+  resolved "https://codeload.github.com/bsansouci/tgls/tar.gz/44d4b1a07b6eea9cbd29a6d43128247d4f312bbe"
+
+Tsdl@bsansouci/tsdl:
+  version "0.9.1"
+  resolved "https://codeload.github.com/bsansouci/tsdl/tar.gz/2a472117eb1134a0ba828969788c98757160b293"
+  dependencies:
+    sdl2 bsansouci/SDL-mirror#fast
+
 animejs@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/animejs/-/animejs-3.0.1.tgz#8b808bad575e3b6106489d8b04b92bc4062166fe"
   integrity sha512-7mMoBQScvA7s4zm3EVgnuXXrtOu6TJNAhU+Ajo7HsXYH0NwbuZIcRHMO65a9NyUlmAXz4VPxlK5cENNOQbCi8g==
+
+buffer-crc32@~0.2.3:
+  version "0.2.13"
+  resolved "https://registry.yarnpkg.com/buffer-crc32/-/buffer-crc32-0.2.13.tgz#0d333e3f00eac50aa1454abd30ef8c2a5d9a7242"
+  integrity sha1-DTM+PwDqxQqhRUq9MO+MKl2ackI=
+
+fd-slicer@~1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/fd-slicer/-/fd-slicer-1.1.0.tgz#25c7c89cb1f9077f8891bbe61d8f390eae256f1e"
+  integrity sha1-JcfInLH5B3+IkbvmHY85Dq4lbx4=
+  dependencies:
+    pend "~1.2.0"
+
+gl-matrix@*:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/gl-matrix/-/gl-matrix-3.0.0.tgz#888301ac7650e148c3865370e13ec66d08a8381f"
+  integrity sha512-PD4mVH/C/Zs64kOozeFnKY8ybhgwxXXQYGWdB4h68krAHknWJgk9uKOn6z8YElh5//vs++90pb6csrTIDWnexA==
 
 p5@^0.7.3:
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/p5/-/p5-0.7.3.tgz#a0660327feb8da3e43359a16ad62566b96a7cabe"
   integrity sha512-Ap0Op/YlbqlBe9BEkpislygOKcID9+i6lbGHcUY/QkgZl21+Jy0GPpw+bLjgURk/wlloLcXGnUDpuGsP0xsx2Q==
 
+pend@~1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
+  integrity sha1-elfrVQpng/kRUzH89GY9XI4AelA=
+
+reprocessing@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/reprocessing/-/reprocessing-0.3.1.tgz#2832f59ca6708941073f7ab63f6026c2146b44d1"
+  integrity sha512-fv63VFzkfPw5qZprar9AnGCisTe5vDDpg/mz7pb7ryuwxM//h1Y67H7Cnln+qvkTBdoYivrp4gV52/BGRRppJw==
+  dependencies:
+    Reasongl "github:bsansouci/reasongl"
+
+sdl2@bsansouci/SDL-mirror#fast:
+  version "2.0.5"
+  resolved "https://codeload.github.com/bsansouci/SDL-mirror/tar.gz/db0756eec3c5979b8291d739ebac9e8747ccbac2"
+  dependencies:
+    yauzl "^2.9.1"
+
 three@^0.101.1:
   version "0.101.1"
   resolved "https://registry.yarnpkg.com/three/-/three-0.101.1.tgz#e7681ef52f4e572cb84f307f16f540c457030ec6"
   integrity sha512-8ufimUVmRLtH+BTpEIbDjdGEKQOVWLMLgGynaKin1KbYTE136ZNOepJ8EgByi0tN43dQ7B1YrKLCJgXGy4bLmw==
+
+yauzl@^2.9.1:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/yauzl/-/yauzl-2.10.0.tgz#c7eb17c93e112cb1086fa6d8e51fb0667b79a5f9"
+  integrity sha1-x+sXyT4RLLEIb6bY5R+wZnt5pfk=
+  dependencies:
+    buffer-crc32 "~0.2.3"
+    fd-slicer "~1.1.0"
